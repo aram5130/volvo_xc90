@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 1920px;
+    height: 1200px;
+    margin: 0 auto;
+    background-image: url('/images/01_main.png');
+    background-size: cover;
+}
+.nav{
+    width: 100%;
+    font-size: 1.2rem;
+}
+.nav-logo{
+    margin: 70px 0 0 60px;
+}
+.nav-item{
+    font-size: 20pt;
+    font-weight: bold;
+    margin: 70px 20px 0 80px;
+}
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: black;
+    text-shadow: 
+    -1px 0 rgba(255, 255, 255, 0.3),
+     0 1px rgba(255, 255, 255, 0.3), 
+     1px 0 rgba(255, 255, 255, 0.3), 
+     0 -1px rgba(255, 255, 255, 0.3);
+}
+.main_icon{ 
+    position: fixed;
+    left: 1600px;
+    margin: 75px 0 0 75px;
+    z-index: 999;
+}
+.main_search_icon{
+    padding-right: 25px;
+}
+.btn{
+    width: 400px;
+    height: 100px;
+    position: relative;
+    display: inline-block;
+    left: 75%;
+    bottom: 250px;
+    font-size: 20pt;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.main_txt{
+    width: 100%;
+    height: 90px;
+    color: white;
+    text-align: center;
+    text-shadow: 4px 2px 2px rgb(0 0 0 / 50%);
+    margin: 900px 0 0 0;
+    letter-spacing: 2px;
+}
+.main_txt h1 {
+    font-size: 20pt;
+}
+.main_txt p {
+    font-size: 16pt;
+}
+.main_txt p span {
+    font-size: 20pt;
+}
+.main_logo{
+    float: right;
+    margin: -50px 50px 0 0;
+}
+/* 1page end */
+/* 2page */
+.detail {
+    width: 1920px;
+    height: 1200px;
+}
+.detail_top {
+    width: 100%;
+    height: 985px;
+    background-image: url('/images/backgound_01.png');
+    background-size: cover;
+    padding-top: 100px;
+}
+.detail_title {
+    text-align: center;
+    color: white;
+    text-shadow: 
+    -1px 0 rgb(0, 0, 0),
+     0 1px rgb(0, 0, 0), 
+     1px 0 rgb(0, 0, 0), 
+     0 -1px rgb(0, 0, 0);
+}
+.detail_title h2{
+    font-size: 44px;
+    margin-bottom: -1px;
+}
+.detail_title p {
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+.detail_dec {
+    text-align: center;
+}
+.detail_dec p,
+span {
+    font-size: 10pt;
+    color: white;
+    margin-bottom: 0px;
+}
+.detail_dec span {
+    color: rgb(221, 166, 103);
+}
+.btn_zoom_img div input {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: url("../images/point_img.png");
+    border: none;
+    cursor: pointer;
+}
+.btn_zoom_img .zoom_btn_first input {
+}
+.btn_zoom_img .zoom_btn_second input {
+
+}
+.btn_zoom_img .zoom_btn_third input {
+   
+}
+.btn_zoom_img .zoom_btn_fourth input {
+    
+}
+.btn_zoom_img input:last-child {
+
+}
+.btn_zoom_img img {
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    right: 700px;
+    display: none;
+}
+/* .detail_top .detail_small_txt {
+    text-align: right;
+    color: white;
+    font-size: 8pt;
+    margin-right: 10px;
+    position: relative;
+    top: 620px;
+}
+.detail_bottom {
+    width: 1920px;
+    display: inline-block;
+    margin-top: 5px;
+}
+.detail_bottom img:last-child {
+    width: 467px;
+    height: 200px;
+} */
