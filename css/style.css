@@ -118,41 +118,48 @@ span {
     color: rgb(221, 166, 103);
 }
 .btn_zoom_img div input {
-    position: absolute;
+    position: relative;
     width: 40px;
     height: 40px;
     background: url("../images/point_img.png");
     border: none;
     cursor: pointer;
 }
-.btn_zoom_img .zoom_btn_first input {
+.zoom_btn_first {
+    top: 370px;
+    left: 270px;
 }
-.btn_zoom_img .zoom_btn_second input {
+.zoom_btn_second {
+    top: 265px;
+    left: 380px;  
+}
+.zoom_btn_third {
+    top: 460px;
+    left: 625px;  
+}
+.zoom_btn_fourth {
+    top: 170px;
+    left: 1100px;
+}
+.zoom_btn_fifth {
+    top: 270px;
+    left: 1550px;
+}
 
-}
-.btn_zoom_img .zoom_btn_third input {
-   
-}
-.btn_zoom_img .zoom_btn_fourth input {
-    
-}
-.btn_zoom_img input:last-child {
-
-}
 .btn_zoom_img img {
     position: absolute;
     width: 500px;
     height: 400px;
-    right: 700px;
+    margin-left: 705px;
     display: none;
 }
-/* .detail_top .detail_small_txt {
+.detail_top .detail_small_txt {
     text-align: right;
     color: white;
     font-size: 8pt;
     margin-right: 10px;
     position: relative;
-    top: 620px;
+    top: 420px;
 }
 .detail_bottom {
     width: 1920px;
@@ -162,4 +169,210 @@ span {
 .detail_bottom img:last-child {
     width: 467px;
     height: 200px;
-} */
+}
+/* 2page end */
+/* 3page */
+.exterior {
+    width: 1920px;
+    height: 1200px;
+    background-image: url('/images/backgound_02.png');
+    background-size: cover;
+    padding-top: 100px;
+}
+.exterior_title {
+    text-align: center;
+    color: black;
+}
+.exterior_title h2{
+    font-size: 44px;
+    margin-bottom: -1px;
+}
+.exterior_title p {
+    font-size: 15px;
+    margin-bottom: 140px;
+}
+.exterior_color {
+    width: 100%; 
+    text-align: center; 
+    overflow: hidden;
+}
+.exterior_color_img {
+    width: 500px;
+    height: 205px; 
+    display: inline-block; 
+    vertical-align: middle;
+    margin: 0 40px 160px 0;
+}
+.exterior_color p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.exterior_dec {
+    width: 300px;
+    height: 70px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgb(0, 0, 40);
+    border: none;
+    cursor: pointer;
+    float: right;
+    margin: -10px 123px 0 0;
+}
+/* 3page end */
+/* 4page */
+.interior {
+    width: 1920px;
+    height: 1200px;
+    background-image: url('/images/backgound_03.png');
+    background-size: cover;
+    padding-top: 100px;
+}
+.interior_title {
+    text-align: center;
+    color: white;
+    text-shadow: 
+    -1px 0 rgb(0, 0, 0),
+     0 1px rgb(0, 0, 0), 
+     1px 0 rgb(0, 0, 0), 
+     0 -1px rgb(0, 0, 0);
+}
+.interior_title h2{
+    font-size: 44px;
+    margin-bottom: -1px;
+}
+.interior_title p {
+    font-size: 15px;
+    margin-bottom: 80px;
+}
+.interior_frist_line {
+    display: inline-block;
+    padding-left: 123px;
+}
+.interior_second_line {
+    float: right;
+    padding-right: 123px;
+}
+.interior_box {
+    margin-bottom: 80px;
+}
+.interior_frist_line,
+.interior_second_line {
+    position: relative;
+}
+.interior_text {
+    position: absolute;
+    width: 500px;
+    height: 50px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    line-height: 50px;
+    padding-left: 10px;
+    margin-top: -50px;
+}
+.interior_dec {
+    width: 300px;
+    height: 70px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgb(40, 40, 40);
+    border: none;
+    cursor: pointer;
+    float: right;
+    margin: -10px 123px 0 0;
+}
+/* 4page end */
+/* 5page */
+.trims {
+    width: 1920px;
+    height: 1200px;
+    background-image: url('/images/backgound_04.png');
+    background-size: cover;
+    padding-top: 100px;
+}
+.trims_title {
+    text-align: center;
+    color: white;
+
+}
+.trims_title h2{
+    font-size: 44px;
+    margin-bottom: -1px;
+}
+.trims_title p {
+    font-size: 15px;
+    margin-bottom: 170px;
+}
+.trims_line {
+    width: 100%;
+    text-align: center;
+}
+.trims_box {
+    display: inline-block;
+    margin-right: 30px;
+    position: relative;
+    color: black;
+}
+.trims_box img {
+    width: 538px;
+    height: 535px;
+}
+.trims_text {
+    position: absolute;
+    width: 538px;
+    height: 220px;
+    margin-top: -220px;
+
+}
+.trims_text span {
+    color: black;
+    font-size: 18px;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+.trims_small_p {
+    font-size: 15px;
+    margin-bottom: 35px;
+}
+.trims_dec {
+    width: 220px;
+    height: 50px;
+    background-color: rgb(0, 0, 40);
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+.trims_small_txt {
+    text-align: right;
+    color: white;
+    font-size: 8pt;
+    margin-right: 10px;
+    position: relative;
+    top: 250px;
+}
+/* 5page end */
+/* footer */
+footer {
+    width: 100%;
+    height: 150px;
+}
+.footer_logo {
+    height: 30px;
+    width: 300px;
+    margin: 75px 0 0 137px;
+}
+
+.footer_menu ul {
+    border: 1px solid red;
+    list-style-type: none;
+}
+.footer_menu li {
+    float: left;
+    margin-right: 80px;
+}
+.footer_icon {
+    border: 1px solid blue;
+}
