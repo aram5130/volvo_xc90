@@ -54,31 +54,170 @@
       <h1>LUXURY</h1>
       <p>The <span>XC90</span> Inscription</p>
     </div>
-
-    <button type="button" class="btn btn-outline-light">시승 신청하기 > </button>
+    <button type="button" class="btn btn-outline-light" id="popupButton">시승 신청하기 > </button>
     <img class="main_logo" src='images/logo_img.png'>
-    <div>
-      <form id="popup">
+    <div class="popup" id="popUp">
+      <form>
         <div class="popup_title">
           <img src="/images/logo_txt.png" alt="logo_txt">
           <p>The XC90 Inscription</p>
-          <p>신 청 자 정 보</p>
-        </div>
-        <div class="isc">
+          </div>
+          <div class="popup_place">
+          <legend>신 청 자 정 보</legend>
+          <div class="popup_manu">
           <ul>
             <li>
-              <ul>
-                <li><p>이 름</p></li>
-                <li> <input type="text"></li>
-            </ul>
+              <label class="cust_name">이름</label>
+              <input type="text" id="cust_name" maxlength="100" nospace="" hangul="" required autocomplete="off">
             </li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>
+              <label class="nub">휴대 전화번호</label>
+              <input type="tel" placeholder="010-0000-0000" required>
+            </li>
+            <li>
+              <label class="cust_email">이메일</label>
+              <input type="email" placeholder="example@email.com" required>
+            </li>
+            <li>
+              <label class="birth_day">생년월일 / 성별</label>
+              <div class="birth_slt">
+                <select name="birth_yy" id="birthYy" class="birth_y" required>
+                    <option value="">년</option>
+                    <option value="1994">1994</option>
+                    <option value="1993">1993</option>
+                    <option value="1992">1992</option>
+                    <option value="1991">1991</option>
+                    <option value="1990">1990</option>
+                    <option value="1989">1989</option>
+                    <option value="1988">1988</option>
+                    <option value="1987">1987</option>
+                    <option value="1986">1986</option>
+                    <option value="1985">1985</option>
+                    <option value="1984">1984</option>
+                    <option value="1983">1983</option>
+                    <option value="1982">1982</option>
+                    <option value="1981">1981</option>
+                    <option value="1980">1980</option>
+                    <option value="1979">1979</option>
+                    <option value="1978">1978</option>
+                    <option value="1977">1977</option>
+                    <option value="1976">1976</option>
+                    <option value="1975">1975</option>
+                    <option value="1974">1974</option>
+                    <option value="1973">1973</option>
+                    <option value="1972">1972</option>
+                    <option value="1971">1971</option>
+                    <option value="1970">1970</option>
+                    <option value="1969">1969</option>
+                    <option value="1968">1968</option>
+                    <option value="1967">1967</option>
+                    <option value="1966">1966</option>
+                    <option value="1965">1965</option>
+                    <option value="1964">1964</option>
+                    <option value="1963">1963</option>
+                    <option value="1962">1962</option>
+                    <option value="1961">1961</option>
+                    <option value="1960">1960</option>
+                    <option value="1959">1959</option>
+                    <option value="1958">1958</option>
+                    <option value="1957">1957</option>
+                    <option value="1956">1956</option>
+                    <option value="1955">1955</option>
+                    <option value="1954">1954</option>
+                    <option value="1953">1953</option>
+                    <option value="1952">1952</option>
+                    <option value="1951">1951</option>
+                    <option value="1950">1950</option>
+                    <option value="1949">1949</option>
+                    <option value="1948">1948</option>
+                    <option value="1947">1947</option>
+                    <option value="1946">1946</option>
+                </select>
+                <select name="birth_mm" id="birthMm" class="birth_m" required>
+                    <option value="">월</option>
+                    <option value="01">1</option>
+                    <option value="02">2</option>
+                    <option value="03">3</option>
+                    <option value="04">4</option>
+                    <option value="05">5</option>
+                    <option value="06">6</option>
+                    <option value="07">7</option>
+                    <option value="08">8</option>
+                    <option value="09">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                <select name="birth_dd" id="birthDd" class="birth_d" required>
+                    <option value="">일</option>
+                    <option value="01">1</option>
+                    <option value="02">2</option>
+                    <option value="03">3</option>
+                    <option value="04">4</option>
+                    <option value="05">5</option>
+                    <option value="06">6</option>
+                    <option value="07">7</option>
+                    <option value="08">8</option>
+                    <option value="09">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+              </div>
+              <div class="check_box" id="genderCheck">
+                <input type="radio" name="rd" value="rd1" class="gender_check"> 남성
+                <input type="radio" name="rd" value="rd1" class="gender_check"> 여성
+              </div>
+            </li>
+            <li>
+              <label class="showroom_wrap" for="sh">시승 전시장</label>
+              <select id="showroom" required>
+                <option value="미선택">전시장을 선택하세요.</option>
+                <option value="송파">송파 전시장</option>
+                <option value="판교">판교 전시장</option>
+                <option value="수원">수원 전시장</option>
+                <option value="부산">부산 전시장</option>
+                <option value="제주">제주 전시장</option>
+              </select>
+            </li>
           </ul>
+      <div class="caption">
+        <ul>
+          <li>
+              <span>* 본 시승 신청 안내는 MMS를 통해 진행되며, 마케팅 활용에 동의하지 않을 시 시승신청에 제한이 있을 수 있습니다.</span>
+          </li>
+          <li>
+              <span>* 시승 신청 완료 시 해당 전시장의 지정 담당자 정보가 MMS로 고객님께 안내됩니다.</span>
+          </li>
+          <li>
+              <span>* 신청 완료한 전시장의 지정 담당자가 고객님께 연락드릴 예정이며, 21시 이후 시승 신청은 다음날 연락 드립니다.</span>
+          </li>
+        </ul>
+      </div>
+      <div class="popup_reserve">
+        <button id="popupReserve">신청하기</button>
+      </div>
         </div>
-        
+      </div>
       </form>
     </div>
   </div>
@@ -266,6 +405,6 @@
       <a href="#"><img src="/images/icon_facebook.png" alt="youtube"></a>
     </div>
   </footer>
+  <script src="js/index.js"></script>
 </body>
-
 </html>
