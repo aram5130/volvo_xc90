@@ -248,14 +248,32 @@ span {
   top: 270px;
   left: 1550px;
 }
-
-.btn_zoom_img img {
+#lightbox {
+  /* background-color: black; */
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  width: 1920px;
+  height: 1200px;
+  top: 0;
+  left: 0;
+  /* display: none; */
+}
+#lightboxImage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* check */
+  /* transform: translateY(-50%); */
+  /* transform: translateX(-50%); */
+  transform: translate(-50%, -50%);
+}
+/* .btn_zoom_img img {
   position: absolute;
   width: 500px;
   height: 400px;
   margin-left: 705px;
   display: none;
-}
+} */
 .detail_top .detail_small_txt {
   text-align: right;
   color: white;
