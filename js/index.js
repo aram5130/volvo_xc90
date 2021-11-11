@@ -1,3 +1,8 @@
+const searchIcon = document.getElementById("searchIcon");
+// console.log(searchIcon);
+const menuIcon = document.getElementById("menuIcon");
+// console.log(menuIcon);
+
 const popupBox = document.getElementById("popupButton");
 // console.log(popupBox);
 const popUp = document.getElementById("popUp");
