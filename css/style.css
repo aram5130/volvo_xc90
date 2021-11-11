@@ -4,9 +4,8 @@
 }
 .main {
   width: 1920px;
-  height: 1200px;
-  
-  background-image: url("/images/01_main.png");
+  height: 1020px;
+  background-image: url("/images/01_main_1020.png");
   background-size: cover;
 }
 .nav {
@@ -56,7 +55,7 @@
   color: white;
   text-align: center;
   text-shadow: 4px 2px 2px rgb(0 0 0 / 50%);
-  margin: 900px 0 0 0;
+  margin: 790px 0 0 0;
   letter-spacing: 2px;
 }
 .main_txt h1 {
@@ -69,19 +68,32 @@
   font-size: 20pt;
 }
 .main_logo {
+  width: 70px;
+  height: 70px;
   float: right;
-  margin: -50px 50px 0 0;
+  margin: -95px 30px 0 0;
 }
 /* 1page end */
 /* popup */
 .popup {
   position: absolute;
   width: 1920px;
-  height: 1200px;
+  height: 1020px;
   top: 0;
   left: 0;
   display: none;
   background-color: rgba(0, 0, 0, 0.4);
+}
+#popupClose {
+ width: 55px;
+ height: 53px;
+ position: absolute;
+ top: 0px;
+ margin: 0 auto;
+ right: 0px;
+ cursor: pointer;
+ text-align: center;
+ line-height: 53px;
 }
 .popup form {
   width: 900px;
@@ -138,12 +150,12 @@
   line-height: 55px;
 }
 .birth_y {
-  width: 90px;
+  width: 80px;
   height: 30px;
   margin-right: 20px;
 }
 .birth_m, .birth_d {
-  width: 70px;
+  width: 63px;
   height: 30px;
   margin-right: 20px;
 }
@@ -185,12 +197,14 @@
 /* 2page */
 .detail {
   width: 1920px;
-  height: 1200px;
+  height: 1020px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 .detail_top {
   width: 100%;
-  height: 985px;
-  background-image: url("/images/backgound_01.png");
+  height: 850px;
+  background-image: url("/images/backgound_01_1020.png");
   background-size: cover;
   padding-top: 100px;
 }
@@ -229,23 +243,23 @@ span {
   cursor: pointer;
 }
 .zoom_btn_first {
-  top: 370px;
+  top: 280px;
   left: 270px;
 }
 .zoom_btn_second {
-  top: 265px;
+  top: 185px;
   left: 380px;
 }
 .zoom_btn_third {
-  top: 460px;
-  left: 625px;
+  top: 370px;
+  left: 635px;
 }
 .zoom_btn_fourth {
-  top: 170px;
+  top: 80px;
   left: 1100px;
 }
 .zoom_btn_fifth {
-  top: 270px;
+  top: 200px;
   left: 1550px;
 }
 #lightbox {
@@ -256,7 +270,7 @@ span {
   height: 1200px;
   top: 0;
   left: 0;
-  /* display: none; */
+  display: none;
 }
 #lightboxImage {
   position: absolute;
@@ -280,26 +294,29 @@ span {
   font-size: 8pt;
   margin-right: 10px;
   position: relative;
-  top: 420px;
+  top: 290px;
 }
 .detail_bottom {
   width: 1920px;
   display: inline-block;
   margin-top: 5px;
 }
+.detail_bottom img {
+  width: 476px;
+  height: 170px;
+}
 .detail_bottom img:first-child {
-  width: 470px;
+  width: 477px;
 }
 .detail_bottom img:last-child {
   width: 477px;
-  height: 200px;
 }
 /* 2page end */
 /* 3page */
 .exterior {
   width: 1920px;
-  height: 1200px;
-  background-image: url("/images/backgound_02.png");
+  height: 1020px;
+  background-image: url("/images/backgound_02_1020.png");
   background-size: cover;
   padding-top: 100px;
 }
@@ -313,7 +330,7 @@ span {
 }
 .exterior_title p {
   font-size: 15px;
-  margin-bottom: 140px;
+  margin-bottom: 70px;
 }
 .exterior_color {
   width: 100%;
@@ -321,11 +338,14 @@ span {
   overflow: hidden;
 }
 .exterior_color_img {
-  width: 500px;
-  height: 205px;
+  width: 480px;
+  height: 185px;
   display: inline-block;
   vertical-align: middle;
-  margin: 0 40px 160px 0;
+  margin: 0 60px 160px 0;
+}
+.exterior_color_img:last-child {
+  margin-bottom: 0;
 }
 .exterior_color p {
   font-size: 18px;
@@ -335,6 +355,7 @@ span {
 .exterior_dec {
   width: 300px;
   height: 70px;
+  position: relative;
   color: white;
   text-align: center;
   font-size: 20px;
@@ -342,16 +363,16 @@ span {
   border: none;
   cursor: pointer;
   float: right;
-  margin: -10px 123px 0 0;
+  margin: -50px 123px 0 0;
 }
 /* 3page end */
 /* 4page */
 .interior {
   width: 1920px;
-  height: 1200px;
-  background-image: url("/images/backgound_03.png");
+  height: 1020px;
+  background-image: url("/images/backgound_03_1020.png");
   background-size: cover;
-  padding-top: 100px;
+  padding-top: 80px;
 }
 .interior_title {
   text-align: center;
@@ -393,6 +414,7 @@ span {
   margin-top: -50px;
 }
 .interior_dec {
+  position: relative;
   width: 300px;
   height: 70px;
   color: white;
@@ -402,13 +424,13 @@ span {
   border: none;
   cursor: pointer;
   float: right;
-  margin: -10px 123px 0 0;
+  margin: -150px 123px 0 0;
 }
 /* 4page end */
 /* 5page */
 .trims {
   width: 1920px;
-  height: 1200px;
+  height: 1020px;
   background-image: url("/images/backgound_04.png");
   background-size: cover;
   padding-top: 100px;
@@ -470,7 +492,8 @@ span {
   font-size: 8pt;
   margin-right: 10px;
   position: relative;
-  top: 250px;
+  top: 100px;
+  line-height: 2px;
 }
 /* 5page end */
 /* footer */
